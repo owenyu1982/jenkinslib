@@ -15,12 +15,12 @@ pipeline {
             }
     }
 
-    options {
+/*    options {
         timestamps()  //日志会有时间
         skipDefaultCheckout()  //删除隐式checkout scm语句
         disableConcurrentBuilds() //禁止并行
         timeout(time: 1, unit: 'HOURS')  //流水线超时设置1h
-    }
+    } */
 
     stages {
         //下载代码
