@@ -29,7 +29,7 @@ pipeline {
     stages {
         //下载代码
         stage("GetCode"){ //阶段名称
-            when { environment name: 'test', value: 'abcd' }
+            when { environment name: 'test', value: 'abcd' }  //when用法，当变量test值为abcd才运行下面步骤
             steps{  //步骤
                 timeout(time:5, unit:"MINUTES"){   //步骤超时时间
                     script{ //填写运行代码
