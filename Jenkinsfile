@@ -1,8 +1,9 @@
 #!groovy
-
+//引用共享库jenkinslib
 @Library('jenkinslib') _
 
-def tools = new org.devops.tools()
+//定义一个变量，引用共享库
+def tools = new org.devops.tools() //即src/org/devops/tools.groovy 这里.groovy不用写
 
 
 
@@ -66,7 +67,7 @@ pipeline {
                         timeout(time:30, unit:"MINUTES"){
                             script{
                                 print("代码扫描")
-                                tools.PrintMes("代码扫描",'green')
+                                tools.PrintMes("代码扫描",'green')  //使用共享库里面的tools.groovy里面的PrintMes方法
                             }
                         }
                     }
