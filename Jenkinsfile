@@ -6,6 +6,7 @@ def tools = new org.devops.tools()
 
 
 
+//String workspace = "/opt/jenkins/workspace"
 String workspace = "/opt/jenkins/workspace"
 
 //Pipeline
