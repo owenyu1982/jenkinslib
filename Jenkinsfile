@@ -10,6 +10,8 @@ def tools = new org.devops.tools() //即src/org/devops/tools.groovy 这里.groov
 //String workspace = "/opt/jenkins/workspace"
 String workspace = "/var/lib/jenkins/"
 
+hello() //直接使用vars/hello.groovy 这里的hello()就是整个hello.groovy里面的内容吧
+
 //Pipeline
 pipeline {
     agent { node {  label "master"   //指定运行节点的标签或者名称
