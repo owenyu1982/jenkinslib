@@ -8,7 +8,7 @@ def tools = new org.devops.tools() //即src/org/devops/tools.groovy 这里.groov
 
 
 //String workspace = "/opt/jenkins/workspace"
-String workspace = "/var/lib/jenkins/"
+String workspace = "/var/lib/jenkins/workspace"
 
 hello() //直接使用vars/hello.groovy 这里的hello()就是整个hello.groovy里面的内容吧
 
